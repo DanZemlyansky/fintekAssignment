@@ -5,10 +5,10 @@ import CardContainer from './components/containers/CardContainer'
 function App() {
 
   return (
-    <>
+    <section id='appContainer'>
     <HeroContainer/>
     <CardContainer/>
-    </>
+    </section>
   )
 }
 

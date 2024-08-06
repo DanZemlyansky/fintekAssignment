@@ -1,0 +1,19 @@
+@import url(../App.css);
+
+#heroContainer {
+    width: 480px;
+    height: 642.45px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--hero);
+}
+
+#heroText {
+    width: 300px;
+    font: 300 30px/44px "Heebo";
+    color: var(--heroText);
+}
+
+#fintekImg {
+    width: 98px;
+}

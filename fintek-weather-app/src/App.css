@@ -10,10 +10,20 @@
 }
 
 @font-face {
-  font-family: 'Heebo';
+  font-family: Heebo;
   src: url('../public/fonts/Heebo-VariableFont_wght.ttf');
 }
 
+
 body{
-  font-family: 'Heebo' , 'sans-serif';
+  font-family: Heebo;
+  background-color: var(--bg);
+}
+
+
+#appContainer{
+  height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
 }

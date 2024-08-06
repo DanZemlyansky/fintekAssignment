@@ -1,0 +1,6 @@
+@import url('../App.css');
+
+#cardContainer{
+    width: 669px;
+    background-color: var(--cardContainer);
+}
