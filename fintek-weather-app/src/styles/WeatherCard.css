@@ -1,5 +1,13 @@
 @import url('../App.css');
 
 #weatherCardContainer{
+    border-radius: 30px;
 background-color: var(--cardBg);
+width: 65%;
+height: 80%;
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }

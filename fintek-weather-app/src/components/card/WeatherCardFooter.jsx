@@ -1,9 +1,10 @@
-export default function WeatherCardFooter(){
+import React from 'react';
 
-
-    return(
+export default function WeatherCardFooter() {
+    return (
         <>
-            
+            <span>13:00</span>
+            <span>19°C</span>
         </>
-    )
+    );
 }
