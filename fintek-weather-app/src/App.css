@@ -9,3 +9,11 @@
   --inputText: #363636;
 }
 
+@font-face {
+  font-family: 'Heebo';
+  src: url('../public/fonts/Heebo-VariableFont_wght.ttf');
+}
+
+body{
+  font-family: 'Heebo' , 'sans-serif';
+}
