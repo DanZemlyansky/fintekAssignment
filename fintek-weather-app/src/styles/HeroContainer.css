@@ -2,7 +2,7 @@
 
 #heroContainer {
     width: 480px;
-    height: 642.45px;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     background-color: var(--hero);

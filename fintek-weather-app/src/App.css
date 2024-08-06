@@ -1,4 +1,4 @@
-:root{
+:root {
   --submitBtn: #046B3B;
   --cardBg: #27737D;
   --cardContainer: #DDE4E6;
@@ -15,15 +15,16 @@
 }
 
 
-body{
+body {
   font-family: Heebo;
   background-color: var(--bg);
 }
 
 
-#appContainer{
+#appContainer {
+  overflow: hidden;
   height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

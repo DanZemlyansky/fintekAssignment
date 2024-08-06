@@ -2,5 +2,7 @@
 
 #cardContainer{
     width: 669px;
+    height: 85vh;
+    display: flex;
     background-color: var(--cardContainer);
 }
