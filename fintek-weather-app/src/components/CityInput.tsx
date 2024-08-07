@@ -6,6 +6,7 @@ import { useWeatherContext } from "../WeatherContext";
 
 export default function CityInput() {
   const [city, setCity] = useState("");
+  const [error, setError] = useState<string | null>(null); 
   const { setWeatherData, setForecastData } = useWeatherContext();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -14,8 +15,11 @@ export default function CityInput() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+
 
     try {
+      setError(null);
       const weatherResponse = await axios.get<WeatherApiResponse>(`http://localhost:3000/api/getWeather?city=${city}`);
       setWeatherData(weatherResponse.data);
       console.log(weatherResponse.data);
@@ -25,6 +29,7 @@ export default function CityInput() {
       console.log(forecastResponse.data);
 
     } catch (error) {
+      setError("Please enter a city name.");
       console.log("Error getting data from server:", error);
     }
   };
@@ -47,6 +52,7 @@ export default function CityInput() {
           Check
         </button>
       </div>
+      {error && <span className="errorMsg">{error}</span>}
     </form>
   );
 }

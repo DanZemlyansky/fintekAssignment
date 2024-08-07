@@ -27,6 +27,10 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10%;
-  flex-direction: row;
-  flex-wrap: wrap;
+}
+
+@media (max-width: 964px) {
+  #appContainer {
+    flex-wrap: wrap;
+  }
 }

@@ -6,66 +6,65 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--hero);
-  }
-  
-  .heroMainContainer {
+}
+
+.heroMainContainer {
     padding-left: 49px;
-  }
-  
-  #heroText {
+}
+
+#heroText {
     margin: 0;
     margin-bottom: 81px;
     width: 300px;
     font: 300 30px/44px "Heebo";
     color: var(--heroText);
-  }
-  
-  #heroImgContainer {
+}
+
+#heroImgContainer {
     display: flex;
-  }
-  
-  #fintekImg {
+}
+
+#fintekImg {
     width: 98px;
     top: -20px;
     left: -40px;
     max-width: 100%;
-  }
-  
-  @media (max-width: 964px) {
+}
+
+@media (max-width: 964px) {
     #heroContainer {
-      width: 70%;
-      padding: 20px;
-      height: auto; /* Adjust height for responsiveness */
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
     }
-  
+
     #heroText {
-      width: 100%;
-      font-size: 26px;
-      line-height: 36px;
-      margin-bottom: 60px; /* Adjust margin */
+        width: 100%;
+        font-size: 26px;
+        line-height: 36px;
+        margin-bottom: 60px;
     }
-  
-    .heroMainContainer {
-      padding-left: 20px;
-    }
-  }
-  
-  @media (max-width: 480px) {
+
+}
+
+@media (max-width: 480px) {
     #heroContainer {
-      width: 100%;
-      padding: 20px;
-      height: auto; /* Adjust height for responsiveness */
+        width: 100%;
+        padding: 20px;
+        height: auto;
     }
-  
+
     #heroText {
-      width: 100%;
-      font-size: 24px;
-      line-height: 32px;
-      margin-bottom: 40px; /* Adjust margin */
+        text-align: center;
+        width: 100%;
+        margin-top: 5%;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 40px;
     }
-  
+
     .heroMainContainer {
-      padding-left: 10px;
+        padding-left: 10px;
     }
-  }
-  
+}

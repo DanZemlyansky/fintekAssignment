@@ -1,6 +1,7 @@
 @import url('../App.css');
 
-#cardContainer{
+#cardContainer,
+#cardContainerNoData {
     width: 669px;
     height: 85vh;
     display: flex;
@@ -8,3 +9,15 @@
     align-items: center;
     background-color: var(--cardContainer);
 }
+
+
+#cardContainerNoData {
+    background: none;
+}
+
+@media (max-width: 964px) {
+    #cardContainer {
+        background: none;
+    }
+}
+
