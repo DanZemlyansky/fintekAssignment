@@ -5,17 +5,17 @@ import "../../styles/HeroContainer.css";
 
 export default function HeroContainer() {
   return (
-    <section id="heroContainer">
-      <div id="heroImgContainer">
-        <img id="fintekImg" src={fintekLogo} alt="fintek"></img>
+    <section id="heroContainer" aria-labelledby="heroText" role="region">
+      <div id="heroImgContainer" role="img" aria-label="Fintek Logo">
+        <img id="fintekImg" src={fintekLogo} alt="Fintek Logo"></img>
       </div>
       <div className="heroMainContainer">
         <p id="heroText">
           Use our weather app to see the weather around the world
         </p>
-        <CityInput />
+        <CityInput aria-label="City Input" />
       </div>
-      <LatLong />
+      <LatLong aria-label="Latitude and Longitude Display" />
     </section>
   );
 }

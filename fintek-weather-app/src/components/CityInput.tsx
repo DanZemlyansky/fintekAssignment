@@ -47,6 +47,8 @@ export default function CityInput() {
           className="cityInput"
           value={city}
           onChange={handleInputChange}
+          aria-required="true"
+          aria-describedby="cityInputError" 
         />
         <button type="submit" className="cityInputButton">
           Check
