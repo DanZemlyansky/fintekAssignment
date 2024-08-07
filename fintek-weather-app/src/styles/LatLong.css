@@ -1,0 +1,17 @@
+@import url('../App.css');
+
+#latLongContainer{
+    margin: 0;
+    padding-left: 49px;
+width: 205px;
+}
+
+#latLongData{
+    display: flex;
+    justify-content: space-between;
+}
+
+.latLong{
+color: var(--heroText);
+font: normal normal 300 14px/22px Heebo;
+}

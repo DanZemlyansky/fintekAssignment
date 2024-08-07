@@ -1,19 +1,52 @@
-@import url(../App.css);
+@import url('../App.css');
 
 #heroContainer {
+    box-sizing: border-box;
     width: 480px;
     height: 80vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: var(--hero);
 }
 
+.heroMainContainer{
+padding-left: 49px;
+}
+
 #heroText {
+    margin: 0;
+    margin-bottom: 81px; 
     width: 300px;
     font: 300 30px/44px "Heebo";
     color: var(--heroText);
 }
 
+#heroImgContainer{
+display: flex;
+}
+
 #fintekImg {
     width: 98px;
+    top: -20px;
+    left: -40px;
+    max-width: 100%; 
+}
+
+
+
+
+@media (max-width: 480px) {
+    #heroContainer {
+        width: 100%; 
+        padding: 20px; 
+    }
+
+    #heroText {
+        width: 100%;
+        font-size: 24px; 
+        line-height: 32px;
+    }
+    
+
 }
