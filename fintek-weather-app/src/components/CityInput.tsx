@@ -2,13 +2,11 @@ import axios from "axios";
 import "../styles/CityInput.css";
 import { WeatherApiResponse } from "../Types";
 import { useState } from "react";
- 
-interface CityInputProps {
-  onWeatherData: (data: WeatherApiResponse) => void;
-}
+import { useWeatherContext } from "../WeatherContext";
 
-export default function CityInput({ onWeatherData }: CityInputProps) {
+export default function CityInput() {
   const [city, setCity] = useState("");
+  const { setWeatherData } = useWeatherContext();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCity(e.target.value);
@@ -19,7 +17,9 @@ export default function CityInput({ onWeatherData }: CityInputProps) {
     
     try {
       const response = await axios.get<WeatherApiResponse>(`http://localhost:3000/api/getWeather?city=${city}`);
-      onWeatherData(response.data);
+      setWeatherData(response.data);
+      console.log(response.data);
+      
     } catch (error) {
       console.log("Error getting data from server:", error);
     }
