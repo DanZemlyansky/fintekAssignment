@@ -2,7 +2,7 @@ import axios from "axios";
 import "../styles/CityInput.css";
 import { WeatherApiResponse } from "../Types";
 import { useState } from "react";
-
+ 
 interface CityInputProps {
   onWeatherData: (data: WeatherApiResponse) => void;
 }

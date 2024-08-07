@@ -5,7 +5,6 @@ import "../../styles/HeroContainer.css";
 import { useState } from "react";
 import { WeatherApiResponse } from "../../Types";
 
-//! pass function to cityInput and call the backend from there
 export default function HeroContainer() {
 const [weatherData , setWeatherData] = useState<WeatherApiResponse | null>(null);
 
