@@ -1,11 +1,10 @@
-import React from "react";
 import "../../styles/WeatherCardFooter.css";
 import { useWeatherContext } from "../../WeatherContext";
 
 export default function WeatherCardFooter() {
   const { forecastData } = useWeatherContext();
 
-  if (!forecastData) {
+  if (!forecastData || !Array.isArray(forecastData.forecast)) {
     return null;
   }
 
@@ -17,7 +16,6 @@ export default function WeatherCardFooter() {
         <div
           key={index}
           className="weatherSnippet"
-          role="listitem"
           aria-label={`Weather at ${hour.time.slice(11, 16)}: ${Math.round(
             hour.temp_c
           )}°C`}

@@ -22,15 +22,12 @@ export default function CityInput() {
       setError(null);
       const weatherResponse = await axios.get<WeatherApiResponse>(`http://localhost:3000/api/getWeather?city=${city}`);
       setWeatherData(weatherResponse.data);
-      console.log(weatherResponse.data);
 
       const forecastResponse = await axios.get<ForecastApiResponse>(`http://localhost:3000/api/getForecast?city=${city}`);
       setForecastData(forecastResponse.data);
-      console.log(forecastResponse.data);
 
     } catch (error) {
       setError("Please enter a city name.");
-      console.log("Error getting data from server:", error);
     }
   };
 
