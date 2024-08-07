@@ -1,19 +1,35 @@
-@import url('../App.css');
-
 #weatherCardContainer {
     box-sizing: border-box;
     padding: 50px;
     border-radius: 30px;
     background-color: var(--cardBg);
     width: 65%;
-    height: 80%;
+    max-height: 80vh; /* Prevent overflow */
     color: #fff;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-}
-.weatherItem {
-    margin-bottom: 10px; 
-}
-
+    overflow: hidden; /* Prevent inner content overflow */
+  }
+  
+  .weatherItem {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 964px) {
+    #weatherCardContainer {
+      width: 100%;
+      max-height: 70vh; /* Adjust max-height for smaller screens */
+      margin-bottom: 20px; /* Add spacing if needed */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #weatherCardContainer {
+      width: 100%;
+      max-height: 70vh; /* Ensure container does not overflow */
+      margin-bottom: 20px; /* Add spacing if needed */
+    }
+  }
+  

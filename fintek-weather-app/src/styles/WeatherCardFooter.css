@@ -1,9 +1,12 @@
 @import url('../App.css');
 
 #weatherFooterContainer {
+    display: flex;
+    justify-content: center;
+    width: 324px;
     margin-top: 34px;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .weatherSnippet {
