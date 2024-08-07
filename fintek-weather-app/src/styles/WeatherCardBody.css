@@ -7,10 +7,9 @@
 }
 
 .weatherDegree {
-    width: 100%;
     font-weight: bold;
     font-size: 130px;
-    letter-spacing: -16.9px;
+    letter-spacing: -10px;
 }
 
 .weatherDesc {
@@ -21,6 +20,11 @@
     text-align: center;
 }
 
-.weatherBodyData{
+.weatherBodyDataContainer {
+    display: flex;
+    gap: 36px;
+}
+
+.weatherBodyData {
     gap: 4px;
 }

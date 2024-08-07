@@ -1,15 +1,25 @@
+import { useWeatherContext } from "../../WeatherContext";
 import '../../styles/LatLong.css'
 
-export default function LatLong(){
+export default function LatLong() {
+  const { weatherData } = useWeatherContext();
+  if (!weatherData) {
+    return null; 
+  }
+  
+  const { lat, lon } = weatherData.location;
+  const lastUpdated = weatherData.current.last_updated;
+  const [date, time] = lastUpdated.split(' ');
 
-//call api on load to get current data
-    return(
-        <section id="latLongContainer">
-        <div id="latLongData">
-            <span className="latLong">latitude</span>
-            <span className="latLong">longitude</span>
-        </div>
-        <span className="latLong">accurate to ... at ...</span>
-        </section>
-    )
+
+console.log(weatherData.current.last_updated);
+
+  return (
+    <section id="latLongContainer">
+      <div id="latLongData">
+        <span className="latLong">Latitude: {lat}</span>
+        <span className="latLong">Longitude: {lon}</span>
+      </div>
+      <span className="latLong">Accurate to {date} at {time}</span>    </section>
+  );
 }

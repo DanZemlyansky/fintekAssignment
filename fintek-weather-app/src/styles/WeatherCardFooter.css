@@ -1,23 +1,23 @@
 @import url('../App.css');
 
-#weatherFooterContainer{
-margin-top: 34px;
+#weatherFooterContainer {
+    margin-top: 34px;
     display: flex;
     gap: 2rem;
 }
 
-.weatherSnippet{
+.weatherSnippet {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.weatherSnippetPrimary{
-font-weight: 300;
-font: normal normal 300 18px/22px Heebo;
-color: var(--cardTextSecondary);
+.weatherSnippetPrimary {
+    font-weight: 300;
+    font: normal normal 300 18px/22px Heebo;
+    color: var(--cardTextSecondary);
 }
 
-.weatherSnippetSecondary{
+.weatherSnippetSecondary {
     font: normal normal medium 18px/22px Heebo;
 }
