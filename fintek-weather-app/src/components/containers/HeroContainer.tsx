@@ -2,9 +2,19 @@ import CityInput from "../CityInput";
 import fintekLogo from "../../assets/logo.svg";
 import LatLong from "../hero/LatLong";
 import "../../styles/HeroContainer.css";
+import { useState } from "react";
+import { WeatherApiResponse } from "../../Types";
 
 //! pass function to cityInput and call the backend from there
 export default function HeroContainer() {
+const [weatherData , setWeatherData] = useState<WeatherApiResponse | null>(null);
+
+const handleWeatherData = (data: WeatherApiResponse) => {
+    setWeatherData(data);
+    console.log(weatherData);
+    
+  };
+
   return (
     <section id="heroContainer">
       <div id="heroImgContainer">
@@ -14,7 +24,7 @@ export default function HeroContainer() {
           <p id="heroText">
             Use our weather app to see the weather around the world
           </p>
-          <CityInput />
+          <CityInput  onWeatherData={handleWeatherData}/>
       </div>
       <LatLong />
     </section>
