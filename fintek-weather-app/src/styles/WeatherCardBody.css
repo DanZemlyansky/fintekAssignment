@@ -1,0 +1,26 @@
+.weatherBodyDegrees {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherDegree {
+    width: 100%;
+    font-weight: bold;
+    font-size: 130px;
+    text-align: center;
+    letter-spacing: -16.9px;
+}
+
+.weatherDesc {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 300;
+    margin: -55px 0 0 0;
+    text-align: center;
+}
+
+.weatherBodyData{
+    gap: 4px;
+}
