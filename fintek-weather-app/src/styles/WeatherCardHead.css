@@ -1,0 +1,32 @@
+@import url('../App.css');
+
+#weatherHeadContainer{
+
+}
+#weatherHeadLocation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #cityName {
+    color: var(--cardText);
+    font: normal normal normal 26px/26px Heebo;
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  #countryName {
+    font: normal normal 300 22px/22px Heebo;
+    color: var(--cardTextSecondary);
+    margin: 0; 
+    padding: 0;
+  }
+#weatherHeadDate{
+    font: normal normal 300 18px/22px Heebo;
+    color: var(--cardTextSecondary);
+    justify-content: center;
+    display: flex;
+    margin-top: 2px; 
+    padding: 0;
+}
